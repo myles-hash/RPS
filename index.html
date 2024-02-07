@@ -9,16 +9,21 @@
   </head>
   <body>
     <h1>Rock Paper Scissors</h1>
-    <p>Type r for rock</p>
-    <p>Type p for paper</p>
-    <p>Type s for scissors</p>
-    <label> Rock / Paper / Scissors </label>
+    <p>Type "r" for rock</p>
+    <p>Type "p" for paper</p>
+    <p>Type "s" for scissors</p>
     <input type="text" id="playerAnswer" />
     <button onClick="go()">Shoot</button>
-    <h3>YOUR ANSWER:</h3>
-    <h3 id="playerAns"></h3>
-    <h3>COMPUTERS ANSWER:</h3>
-    <h3 id="computerAns"></h3>
+    <div id="answers">
+      <div class="div">
+        <h3>YOUR ANSWER:</h3>
+        <h2 id="playerAns"></h2>
+      </div>
+      <div class="div">
+        <h3>COMPUTERS ANSWER:</h3>
+        <h2 id="computerAns"></h2>
+      </div>
+    </div>
     <h2 id="result"></h2>
   </body>
 </html>

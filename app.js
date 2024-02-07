@@ -37,16 +37,14 @@ function go(){
     }
 
 
-    console.log(computerResponseLetter.innerText)
-    console.log(playerAnswer)
 
     if (computerResponseLetter.innerText === playerAnswer){
         result.innerText = "DRAW!"
     }
     else if (computerResponseLetter.innerText === "r" && playerAnswer === "s" || computerResponseLetter.innerText === "p" && playerAnswer === "r" || computerResponseLetter.innerText === "s" && playerAnswer === "p") {
-        result.innerText = "COMPUTER WINS :( !"
+        result.innerText = "COMPUTER WINS :( "
     } else {
-        result.innerText = "YOU WIN :) !"
+        result.innerText = "YOU WIN :) "
     }
 
     playerAnswerInput.value = "";
